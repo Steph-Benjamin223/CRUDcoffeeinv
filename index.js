@@ -25,7 +25,7 @@ function getCoffee() {
     },
   });
 }
-getCoffee();
+getCoffee(); // Calling the getCoffee function immediately
 
 // The "createCoffee" function is defined.  This function is triggered when a form is submitted (presumably a form for adding a new coffee).  It prevents the default form submission behavior, retrieves the values of the coffee name and quantity from the form inputs, and sends a POST request to the API endpoint with the new coffee data.  On success, the "getCoffee" function is called to refresh the coffee list.
 function createCoffee(event) {
