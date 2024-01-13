@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop Inventory App</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <style>
+      .coffee-item {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <h1>Coffee Shop Inventory App</h1>
+
+    <div id="new-coffee" class="jumbotron">
+      <h2>New Coffee</h2>
+      <form id="coffee-form">
+        <input
+          type="text"
+          id="coffee-name"
+          class="form-control"
+          placeholder="Name"
+          required
+        />
+        <input
+          type="number"
+          id="coffee-quantity"
+          class="form-control"
+          placeholder="Quantity"
+          required
+        />
+        <!-- button to create a new coffee -->
+        <button
+          type="button"
+          class="btn btn-primary form-control"
+          onclick="createCoffee(event)"
+        >
+          Add
+        </button>
+      </form>
+    </div>
+
+    <div id="coffee-list">
+      <h2>Coffee Inventory</h2>
+      <ul id="coffees"></ul>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
